@@ -161,7 +161,7 @@ class _SignupState extends State<Signup> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 20),
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
