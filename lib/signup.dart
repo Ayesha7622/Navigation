@@ -52,7 +52,7 @@ class _SignupState extends State<Signup> {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: TextFormField(
-                  controller: emailController,
+                  controller: firstController,
                   style:
                       TextStyle(color: const Color.fromARGB(255, 96, 84, 84)),
                   decoration: InputDecoration(
