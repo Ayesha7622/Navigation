@@ -105,7 +105,7 @@ class _SignupState extends State<Signup> {
                     style: TextStyle(
                         color: const Color.fromARGB(255, 105, 94, 94)),
                     decoration: InputDecoration(
-                      icon: Icon(Icons.password),
+                      icon: Icon(Icons.phone_in_talk_outlined),
                       hintText: "Enter Phone_No:",
                       hintStyle: TextStyle(
                           color: const Color.fromARGB(255, 18, 17, 17)),
