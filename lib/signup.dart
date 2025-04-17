@@ -34,163 +34,167 @@ class _SignupState extends State<Signup> {
                 color: Colors.white, fontSize: 45, fontWeight: FontWeight.bold),
           ),
         ),
-        body: Column(children: [
-          // Center(child: FloatingActionButton(
-          //   onPressed: () {
-          //     Navigator.push(context,
-          //         MaterialPageRoute(builder: (context) => navigation()));
-          //   },
-          // )),
-          SizedBox(
-            height: 40,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
-            child: Container(
-              decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(15)),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  controller: firstController,
-                  style:
-                      TextStyle(color: const Color.fromARGB(255, 96, 84, 84)),
-                  decoration: InputDecoration(
-                    icon: Icon(Icons.email),
-                    hintText: "Enter First_Name:",
-                    hintStyle:
-                        TextStyle(color: const Color.fromARGB(255, 21, 21, 21)),
+        body: SingleChildScrollView(
+          child: Column(children: [
+            // Center(child: FloatingActionButton(
+            //   onPressed: () {
+            //     Navigator.push(context,
+            //         MaterialPageRoute(builder: (context) => navigation()));
+            //   },
+            // )),
+            SizedBox(
+              height: 30,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+              child: Container(
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15)),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    controller: firstController,
+                    style:
+                        TextStyle(color: const Color.fromARGB(255, 96, 84, 84)),
+                    decoration: InputDecoration(
+                      icon: Icon(Icons.email),
+                      hintText: "Enter First_Name:",
+                      hintStyle: TextStyle(
+                          color: const Color.fromARGB(255, 21, 21, 21)),
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  controller: lastController,
-                  style:
-                      TextStyle(color: const Color.fromARGB(255, 105, 94, 94)),
-                  decoration: InputDecoration(
-                    icon: Icon(Icons.password),
-                    hintText: "Enter Last_Name:",
-                    hintStyle:
-                        TextStyle(color: const Color.fromARGB(255, 18, 17, 17)),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    controller: lastController,
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 105, 94, 94)),
+                    decoration: InputDecoration(
+                      icon: Icon(Icons.password),
+                      hintText: "Enter Last_Name:",
+                      hintStyle: TextStyle(
+                          color: const Color.fromARGB(255, 18, 17, 17)),
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  controller: phonenoController,
-                  style:
-                      TextStyle(color: const Color.fromARGB(255, 105, 94, 94)),
-                  decoration: InputDecoration(
-                    icon: Icon(Icons.password),
-                    hintText: "Enter Phone_No:",
-                    hintStyle:
-                        TextStyle(color: const Color.fromARGB(255, 18, 17, 17)),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    controller: phonenoController,
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 105, 94, 94)),
+                    decoration: InputDecoration(
+                      icon: Icon(Icons.password),
+                      hintText: "Enter Phone_No:",
+                      hintStyle: TextStyle(
+                          color: const Color.fromARGB(255, 18, 17, 17)),
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  controller: cnicController,
-                  style:
-                      TextStyle(color: const Color.fromARGB(255, 105, 94, 94)),
-                  decoration: InputDecoration(
-                    icon: Icon(Icons.password),
-                    hintText: "Enter CNIC:",
-                    hintStyle:
-                        TextStyle(color: const Color.fromARGB(255, 18, 17, 17)),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    controller: cnicController,
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 105, 94, 94)),
+                    decoration: InputDecoration(
+                      icon: Icon(Icons.password),
+                      hintText: "Enter CNIC:",
+                      hintStyle: TextStyle(
+                          color: const Color.fromARGB(255, 18, 17, 17)),
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  controller: emailController,
-                  style:
-                      TextStyle(color: const Color.fromARGB(255, 105, 94, 94)),
-                  decoration: InputDecoration(
-                    icon: Icon(Icons.password),
-                    hintText: "Enter Email:",
-                    hintStyle:
-                        TextStyle(color: const Color.fromARGB(255, 18, 17, 17)),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    controller: emailController,
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 105, 94, 94)),
+                    decoration: InputDecoration(
+                      icon: Icon(Icons.password),
+                      hintText: "Enter Email:",
+                      hintStyle: TextStyle(
+                          color: const Color.fromARGB(255, 18, 17, 17)),
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  controller: passwordController,
-                  style:
-                      TextStyle(color: const Color.fromARGB(255, 105, 94, 94)),
-                  decoration: InputDecoration(
-                    icon: Icon(Icons.password),
-                    hintText: "Password:",
-                    hintStyle:
-                        TextStyle(color: const Color.fromARGB(255, 18, 17, 17)),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    controller: passwordController,
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 105, 94, 94)),
+                    decoration: InputDecoration(
+                      icon: Icon(Icons.password),
+                      hintText: "Password:",
+                      hintStyle: TextStyle(
+                          color: const Color.fromARGB(255, 18, 17, 17)),
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-          Center(
-            child: FloatingActionButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Navigat()));
-              },
-              child: Text(
-                'SignUp',
+            Center(
+              child: FloatingActionButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Navigat()));
+                },
+                child: Text(
+                  'SignUp',
+                ),
               ),
-            ),
-          )
-        ]));
+            )
+          ]),
+        ));
   }
 }
