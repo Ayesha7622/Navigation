@@ -128,7 +128,7 @@ class _SignupState extends State<Signup> {
                     style: TextStyle(
                         color: const Color.fromARGB(255, 105, 94, 94)),
                     decoration: InputDecoration(
-                      icon: Icon(Icons.password),
+                      icon: Icon(Icons.message),
                       hintText: "Enter CNIC:",
                       hintStyle: TextStyle(
                           color: const Color.fromARGB(255, 18, 17, 17)),
