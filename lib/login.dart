@@ -31,14 +31,15 @@ class _LoginState extends State<Login> {
           ),
         ),
         body: Column(children: [
-          // Center(
-          //   child: FloatingActionButton(
-          //     onPressed: () {
-          //       Navigator.push(
-          //           context, MaterialPageRoute(builder: (context) => Login()));
-          //     },
-          //   ),
-          // ),
+          Center(
+            child: FloatingActionButton(
+              onPressed: () {
+                Text('Login');
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Login()));
+              },
+            ),
+          ),
           SizedBox(
             height: 40,
           ),
@@ -86,10 +87,12 @@ class _LoginState extends State<Login> {
               ),
             ),
           ),
-
-          Text(
-            'Login',
-          )
+          // FloatingActionButton(
+          //   onPressed: () {},
+          //   child: Text(
+          //     'Login',
+          //   ),
+          // )
         ]));
 
     // child: Text('Login'),
