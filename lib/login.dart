@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:navigate/navi.dart';
-import 'package:state_class/navi.dart';
-import 'package:state_class/state_mnag.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
