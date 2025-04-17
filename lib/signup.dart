@@ -46,7 +46,7 @@ class _SignupState extends State<Signup> {
               height: 30,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 10),
               child: Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -69,7 +69,7 @@ class _SignupState extends State<Signup> {
             ),
 
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 20),
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -92,7 +92,7 @@ class _SignupState extends State<Signup> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+              padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 20),
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
