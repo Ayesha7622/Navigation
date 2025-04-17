@@ -11,7 +11,6 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  // relational operators----
 
   @override
   Widget build(BuildContext context) {
@@ -31,15 +30,12 @@ class _LoginState extends State<Login> {
           ),
         ),
         body: Column(children: [
-          Center(
-            child: FloatingActionButton(
-              onPressed: () {
-                Text('Login');
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Login()));
-              },
-            ),
-          ),
+          // Center(child: FloatingActionButton(
+          //   onPressed: () {
+          //     Navigator.push(context,
+          //         MaterialPageRoute(builder: (context) => navigation()));
+          //   },
+          // )),
           SizedBox(
             height: 40,
           ),
@@ -87,14 +83,17 @@ class _LoginState extends State<Login> {
               ),
             ),
           ),
-          FloatingActionButton(
-            onPressed: () {},
-            child: Text(
-              'Login',
+          Center(
+            child: FloatingActionButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => navigation()));
+              },
+              child: Text(
+                'Login',
+              ),
             ),
           )
         ]));
-
-    // child: Text('Login'),
   }
 }
