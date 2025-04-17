@@ -58,7 +58,7 @@ class _SignupState extends State<Signup> {
                     style:
                         TextStyle(color: const Color.fromARGB(255, 96, 84, 84)),
                     decoration: InputDecoration(
-                      icon: Icon(Icons.email),
+                      icon: Icon(Icons.person),
                       hintText: "Enter First_Name:",
                       hintStyle: TextStyle(
                           color: const Color.fromARGB(255, 21, 21, 21)),
@@ -82,7 +82,7 @@ class _SignupState extends State<Signup> {
                     style: TextStyle(
                         color: const Color.fromARGB(255, 105, 94, 94)),
                     decoration: InputDecoration(
-                      icon: Icon(Icons.password),
+                      icon: Icon(Icons.person_4_rounded),
                       hintText: "Enter Last_Name:",
                       hintStyle: TextStyle(
                           color: const Color.fromARGB(255, 18, 17, 17)),
