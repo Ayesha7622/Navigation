@@ -87,12 +87,12 @@ class _LoginState extends State<Login> {
               ),
             ),
           ),
-          // FloatingActionButton(
-          //   onPressed: () {},
-          //   child: Text(
-          //     'Login',
-          //   ),
-          // )
+          FloatingActionButton(
+            onPressed: () {},
+            child: Text(
+              'Login',
+            ),
+          )
         ]));
 
     // child: Text('Login'),
