@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:navigate/navi.dart';
+import 'package:navigate/navigat.dart';
 
 class Signup extends StatefulWidget {
   const Signup({super.key});
@@ -183,7 +184,7 @@ class _SignupState extends State<Signup> {
             child: FloatingActionButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => navigation()));
+                    MaterialPageRoute(builder: (context) => Navigat()));
               },
               child: Text(
                 'SignUp',
