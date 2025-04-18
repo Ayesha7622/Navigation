@@ -95,9 +95,12 @@ class _SwappingState extends State<Swapping> {
         SizedBox(
           height: 30,
         ),
-        Text(
-          'After Swapping ,',
-          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            'After Swapping ,',
+            style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+          ),
         ),
         SizedBox(
           height: 20,
