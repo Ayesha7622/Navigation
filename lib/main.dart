@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:navigate/ifelse.dart';
 import 'package:navigate/login.dart';
 import 'package:navigate/signup.dart';
+import 'package:navigate/swapping.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         //home: Login()
-        home: Signup());
+        //home: Signup()
+        //home: IfLogin()
+        home: Swapping());
   }
 }
 

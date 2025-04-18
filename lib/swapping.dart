@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:navigate/ifnavi.dart';
-import 'package:navigate/navi.dart';
 
-class IfLogin extends StatefulWidget {
-  const IfLogin({super.key});
+import 'package:navigate/swapnavi.dart';
+
+class Swapping extends StatefulWidget {
+  const Swapping({super.key});
 
   @override
-  State<IfLogin> createState() => _IfLoginState();
+  State<Swapping> createState() => _SwappingState();
 }
 
-class _IfLoginState extends State<IfLogin> {
-  TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+class _SwappingState extends State<Swapping> {
+  int n1 = 0;
+  int n2 = 0;
+
+  TextEditingController n1Controller = TextEditingController();
+  TextEditingController n2Controller = TextEditingController();
   // relational operators----
 
   @override
@@ -19,14 +22,9 @@ class _IfLoginState extends State<IfLogin> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 107, 143, 131),
       appBar: AppBar(
-        leading: Icon(
-          Icons.login,
-          size: 40,
-          color: Colors.white,
-        ),
         backgroundColor: const Color.fromARGB(255, 47, 95, 77),
         title: Text(
-          'Login Screen',
+          'Swapping',
           style: TextStyle(
               color: Colors.white, fontSize: 45, fontWeight: FontWeight.bold),
         ),
@@ -44,18 +42,17 @@ class _IfLoginState extends State<IfLogin> {
           height: 40,
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+          padding: const EdgeInsets.symmetric(horizontal: 78, vertical: 30),
           child: Container(
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(15)),
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextFormField(
-                controller: emailController,
+                controller: n1Controller,
                 style: TextStyle(color: const Color.fromARGB(255, 96, 84, 84)),
                 decoration: InputDecoration(
-                  icon: Icon(Icons.email),
-                  hintText: "Enter Email:",
+                  hintText: "Enter the value of n1:",
                   hintStyle:
                       TextStyle(color: const Color.fromARGB(255, 21, 21, 21)),
                 ),
@@ -64,7 +61,7 @@ class _IfLoginState extends State<IfLogin> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+          padding: const EdgeInsets.symmetric(horizontal: 78, vertical: 30),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white,
@@ -73,11 +70,10 @@ class _IfLoginState extends State<IfLogin> {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextFormField(
-                controller: passwordController,
+                controller: n2Controller,
                 style: TextStyle(color: const Color.fromARGB(255, 105, 94, 94)),
                 decoration: InputDecoration(
-                  icon: Icon(Icons.password),
-                  hintText: "Enter Password:",
+                  hintText: "Enter the value of n2:",
                   hintStyle:
                       TextStyle(color: const Color.fromARGB(255, 18, 17, 17)),
                 ),
@@ -85,32 +81,21 @@ class _IfLoginState extends State<IfLogin> {
             ),
           ),
         ),
-        FloatingActionButton(
-          onPressed: () {
-            String email = emailController.text;
-            String password = passwordController.text;
-            if (email == "aishh@gmail.com") // outer if--true
-            {
-              if (password == "75663") // inner if--true
-              {
-                // welcome
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Navig()));
-              } else {
-                print('Wrong password');
-              }
-            } else {
-              print('wrong email');
-            }
-            // if, if else, if else if, nested if else, switch
-            // Navigator.push(
-            //     context, MaterialPageRoute(builder: (context) => navigation()));
 
-            Text(
-              'Login',
-            );
-          },
-          child: Text('Login'),
+        Center(
+          child: FloatingActionButton(
+            onPressed: () {
+              n1 = n1 + n2;
+              n2 = n1 - n2;
+              n1 = n1 - n2;
+
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Swap()));
+            },
+            child: Text(
+              'Swapping',
+            ),
+          ),
         )
       ]),
     );
