@@ -18,7 +18,7 @@ class _SwappingState extends State<Swapping> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 107, 143, 131),
+      backgroundColor: const Color.fromARGB(255, 177, 232, 235),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 47, 95, 77),
         title: Text(
