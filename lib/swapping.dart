@@ -99,6 +99,9 @@ class _SwappingState extends State<Swapping> {
           'After Swapping ,',
           style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
         ),
+        SizedBox(
+          height: 20,
+        ),
         Text(
           'After Swapping ,the value of n1=$n1',
           style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
