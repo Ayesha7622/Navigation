@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:navigate/swapnavi.dart';
-
 class Swapping extends StatefulWidget {
   const Swapping({super.key});
 
@@ -88,9 +86,6 @@ class _SwappingState extends State<Swapping> {
               n1 = n1 + n2;
               n2 = n1 - n2;
               n1 = n1 - n2;
-
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Swap()));
             },
             child: Text(
               'Swapping',
