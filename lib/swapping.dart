@@ -83,12 +83,12 @@ class _SwappingState extends State<Swapping> {
         Center(
           child: FloatingActionButton(
             onPressed: () {
-              n1 = int.parse(n1Controller.text);
-              n2 = int.parse(n2Controller.text);
-
               n1 = n1 + n2;
               n2 = n1 - n2;
               n1 = n1 - n2;
+
+              n1 = int.parse(n1Controller.text);
+              n2 = int.parse(n2Controller.text);
             },
             child: Text(
               'Swapping',
@@ -97,6 +97,27 @@ class _SwappingState extends State<Swapping> {
         ),
         SizedBox(
           height: 30,
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            'before Swapping ,',
+            style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+          ),
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Text(
+          'The value of n1=$n1',
+          style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        Text(
+          'The value of n2=$n2',
+          style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
