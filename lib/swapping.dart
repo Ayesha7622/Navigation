@@ -91,14 +91,14 @@ class _SwappingState extends State<Swapping> {
           height: 20,
         ),
         Text(
-          'The value of n1=$n1',
+          'The value of n1=$n1Controller',
           style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
         ),
         SizedBox(
           height: 10,
         ),
         Text(
-          'The value of n2=$n2',
+          'The value of n2=$n2Controller',
           style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
         ),
         SizedBox(
