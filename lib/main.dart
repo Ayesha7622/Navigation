@@ -3,6 +3,7 @@ import 'package:navigate/ifelse.dart';
 import 'package:navigate/login.dart';
 import 'package:navigate/signup.dart';
 import 'package:navigate/swapping.dart';
+import 'package:navigate/with.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +16,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        //home: Login()
-        //home: Signup()
-        //home: IfLogin()
-        home: Swapping());
+      debugShowCheckedModeBanner: false,
+      //home: Login()
+      //home: Signup()
+      //home: IfLogin()
+      //home: Swapping()
+      home: SwapWithScreen(),
+    );
   }
 }
 

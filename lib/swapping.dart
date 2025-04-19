@@ -108,6 +108,7 @@ class _SwappingState extends State<Swapping> {
                 n1 = n1 + n2;
                 n2 = n1 - n2;
                 n1 = n1 - n2;
+                setState(() {});
 
                 // n1 = int.parse(n1Controller.text);
                 // n2 = int.parse(n2Controller.text);
