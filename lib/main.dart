@@ -16,14 +16,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      //home: Login()
-      //home: Signup()
-      //home: IfLogin()
-      //home: Swapping()
-      //home: SwapWithScreen()
-      home: SwapClassScreen(),
-    );
+        debugShowCheckedModeBanner: false,
+        //home: Login()
+        //home: Signup()
+        //home: IfLogin()
+        //home: Swapping()
+        home: SwapWithScreen()
+        //home: SwapClassScreen(),
+        );
   }
 }
 
