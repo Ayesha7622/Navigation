@@ -219,28 +219,28 @@ class _SwapWithScreenState extends State<SwapWithScreen> {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 78, vertical: 30),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  controller: emptyController,
-                  style:
-                      TextStyle(color: const Color.fromARGB(255, 105, 94, 94)),
-                  decoration: InputDecoration(
-                    hintText: "Enter the value of n3:",
-                    hintStyle:
-                        TextStyle(color: const Color.fromARGB(255, 18, 17, 17)),
-                  ),
-                ),
-              ),
-            ),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.symmetric(horizontal: 78, vertical: 30),
+          //   child: Container(
+          //     decoration: BoxDecoration(
+          //       color: Colors.white,
+          //       borderRadius: BorderRadius.circular(15),
+          //     ),
+          //     child: Padding(
+          //       padding: const EdgeInsets.all(8.0),
+          //       child: TextFormField(
+          //         controller: emptyController,
+          //         style:
+          //             TextStyle(color: const Color.fromARGB(255, 105, 94, 94)),
+          //         decoration: InputDecoration(
+          //           hintText: "Enter the value of n3:",
+          //           hintStyle:
+          //               TextStyle(color: const Color.fromARGB(255, 18, 17, 17)),
+          //         ),
+          //       ),
+          // //     ),
+          //   ),
+          // ),
 
           // Padding(
           //   padding: const EdgeInsets.all(8.0),
