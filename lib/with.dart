@@ -152,11 +152,12 @@ class SwapWithScreen extends StatefulWidget {
 class _SwapWithScreenState extends State<SwapWithScreen> {
   int n1 = 0;
   int n2 = 0;
-  int n3 = 0;
+  int empty = 0;
 
   TextEditingController n1Controller = TextEditingController();
   TextEditingController n2Controller = TextEditingController();
-  TextEditingController n3Controller = TextEditingController();
+  TextEditingController emptyController = TextEditingController();
+
   // relational operators----
 
   @override
@@ -166,7 +167,7 @@ class _SwapWithScreenState extends State<SwapWithScreen> {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 47, 95, 77),
         title: Text(
-          'Swapping',
+          'Swap With Third Variable',
           style: TextStyle(
               color: Colors.white, fontSize: 45, fontWeight: FontWeight.bold),
         ),
@@ -218,6 +219,28 @@ class _SwapWithScreenState extends State<SwapWithScreen> {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 78, vertical: 30),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextFormField(
+                  controller: emptyController,
+                  style:
+                      TextStyle(color: const Color.fromARGB(255, 105, 94, 94)),
+                  decoration: InputDecoration(
+                    hintText: "Enter the value of n3:",
+                    hintStyle:
+                        TextStyle(color: const Color.fromARGB(255, 18, 17, 17)),
+                  ),
+                ),
+              ),
+            ),
+          ),
 
           // Padding(
           //   padding: const EdgeInsets.all(8.0),
@@ -249,9 +272,10 @@ class _SwapWithScreenState extends State<SwapWithScreen> {
               onPressed: () {
                 n1 = int.parse(n1Controller.text);
                 n2 = int.parse(n2Controller.text);
-                n1 = n1 + n2;
-                n2 = n1 - n2;
-                n1 = n1 - n2;
+                empty = int.parse(emptyController.text);
+                empty = n1;
+                n1 = n2;
+                n2 = empty;
                 setState(() {});
 
                 // n1 = int.parse(n1Controller.text);
