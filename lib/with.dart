@@ -169,7 +169,7 @@ class _SwapWithScreenState extends State<SwapWithScreen> {
         title: Text(
           'Swap With Third Variable',
           style: TextStyle(
-              color: Colors.white, fontSize: 45, fontWeight: FontWeight.bold),
+              color: Colors.white, fontSize: 35, fontWeight: FontWeight.bold),
         ),
       ),
       body: SingleChildScrollView(
