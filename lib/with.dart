@@ -165,7 +165,7 @@ class _SwapWithScreenState extends State<SwapWithScreen> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 177, 232, 235),
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 47, 95, 77),
+        backgroundColor: const Color.fromARGB(255, 86, 39, 86),
         title: Text(
           'Swap With Third Variable',
           style: TextStyle(
@@ -272,7 +272,7 @@ class _SwapWithScreenState extends State<SwapWithScreen> {
               onPressed: () {
                 n1 = int.parse(n1Controller.text);
                 n2 = int.parse(n2Controller.text);
-                // empty = int.parse(emptyController.text);
+
                 empty = n1;
                 n1 = n2;
                 n2 = empty;
