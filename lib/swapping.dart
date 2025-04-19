@@ -114,7 +114,6 @@ class _SwappingState extends State<Swapping> {
 
               n1 = int.parse(n1Controller.text);
               n2 = int.parse(n2Controller.text);
-              setState(() {});
             },
             child: Text(
               'Swapping',
