@@ -152,9 +152,11 @@ class SwapWithScreen extends StatefulWidget {
 class _SwapWithScreenState extends State<SwapWithScreen> {
   int n1 = 0;
   int n2 = 0;
+  int n3 = 0;
 
   TextEditingController n1Controller = TextEditingController();
   TextEditingController n2Controller = TextEditingController();
+  TextEditingController n3Controller = TextEditingController();
   // relational operators----
 
   @override
