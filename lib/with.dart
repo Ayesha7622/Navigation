@@ -301,6 +301,10 @@ class _SwapWithScreenState extends State<SwapWithScreen> {
             height: 20,
           ),
           Text(
+            'Empty=$empty',
+            style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
+          ),
+          Text(
             'The value of n1=$n1',
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
           ),
