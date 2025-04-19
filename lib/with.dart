@@ -156,7 +156,7 @@ class _SwapWithScreenState extends State<SwapWithScreen> {
 
   TextEditingController n1Controller = TextEditingController();
   TextEditingController n2Controller = TextEditingController();
-  TextEditingController emptyController = TextEditingController();
+  // TextEditingController emptyController = TextEditingController();
 
   // relational operators----
 
@@ -272,7 +272,7 @@ class _SwapWithScreenState extends State<SwapWithScreen> {
               onPressed: () {
                 n1 = int.parse(n1Controller.text);
                 n2 = int.parse(n2Controller.text);
-                empty = int.parse(emptyController.text);
+                // empty = int.parse(emptyController.text);
                 empty = n1;
                 n1 = n2;
                 n2 = empty;
@@ -300,10 +300,10 @@ class _SwapWithScreenState extends State<SwapWithScreen> {
           SizedBox(
             height: 20,
           ),
-          Text(
-            'Empty=$empty',
-            style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
-          ),
+          // Text(
+          //   'Empty=$empty',
+          //   style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
+          // ),
           Text(
             'The value of n1=$n1',
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
