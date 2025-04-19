@@ -29,14 +29,6 @@ class _SwappingState extends State<Swapping> {
       ),
       body: SingleChildScrollView(
         child: Column(children: [
-          // Center(
-          //   child: FloatingActionButton(
-          //     onPressed: () {
-          //       Navigator.push(
-          //           context, MaterialPageRoute(builder: (context) => Login()));
-          //     },
-          //   ),
-          // ),
           SizedBox(
             height: 40,
           ),
@@ -111,14 +103,14 @@ class _SwappingState extends State<Swapping> {
           Center(
             child: FloatingActionButton(
               onPressed: () {
-                // n1 = int.parse(n1Controller.text);
-                // n2 = int.parse(n2Controller.text);
+                n1 = int.parse(n1Controller.text);
+                n2 = int.parse(n2Controller.text);
                 n1 = n1 + n2;
                 n2 = n1 - n2;
                 n1 = n1 - n2;
 
-                n1 = int.parse(n1Controller.text);
-                n2 = int.parse(n2Controller.text);
+                // n1 = int.parse(n1Controller.text);
+                // n2 = int.parse(n2Controller.text);
               },
               child: Text(
                 'Swapping',
