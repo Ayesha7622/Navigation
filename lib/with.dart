@@ -1,17 +1,19 @@
 // import 'package:flutter/material.dart';
 
-// class SwapWithoutScreen extends StatefulWidget {
-//   const SwapWithoutScreen({super.key});
+// class SwapClassScreen extends StatefulWidget {
+//   const SwapClassScreen({super.key});
 
 //   @override
-//   State<SwapWithoutScreen> createState() => _SwapWithoutScreenState();
+//   State<SwapClassScreen> createState() => _SwapClassScreenState();
 // }
 
-// class _SwapWithoutScreenState extends State<SwapWithoutScreen> {
+// class _SwapClassScreenState extends State<SwapClassScreen> {
 //   int a = 0;
 //   int b = 0;
+//   int empty = 0;
 //   TextEditingController n1Controller = TextEditingController();
 //   TextEditingController n2Controller = TextEditingController();
+
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
@@ -36,7 +38,7 @@
 //       body: Center(
 //         child: Column(
 //           children: [
-//             SizedBox(height: 20),
+//             SizedBox(height: 30),
 //             Container(
 //               height: 40,
 //               width: 230,
@@ -61,7 +63,7 @@
 //                 ),
 //               ),
 //             ),
-//             SizedBox(height: 20),
+//             SizedBox(height: 25),
 //             Container(
 //               height: 40,
 //               width: 230,
@@ -74,7 +76,7 @@
 //                 style: TextStyle(
 //                   color: Colors.black,
 //                   fontWeight: FontWeight.bold,
-//                   fontSize: 20,
+//                   fontSize: 15,
 //                 ),
 //                 decoration: InputDecoration(
 //                   hintText: 'enter 2nd number',
@@ -87,32 +89,25 @@
 //               ),
 //             ),
 //             SizedBox(height: 20),
-//             Container(
-//               height: 40,
-//               width: 100,
-//               decoration: BoxDecoration(
-//                 borderRadius: BorderRadius.circular(10),
-//                 color: Colors.purpleAccent,
-//               ),
-//               child: FloatingActionButton(
-//                 onPressed: () {
-//                   a = int.parse(n1Controller.text);
-//                   b = int.parse(n2Controller.text);
-//                   a = a + b;
-//                   b = a - b;
-//                   a = a - b;
-//                   setState(() {});
-//                   print("before Swapping value of a=$a");
-//                   print("before swapping value of b=$b");
-//                 },
-//                 child: Text(
-//                   'SWAP',
-//                   style: TextStyle(
-//                     color: Colors.black,
-//                     backgroundColor: Colors.purpleAccent,
-//                     fontSize: 20,
-//                     fontWeight: FontWeight.bold,
-//                   ),
+//             FloatingActionButton(
+//               onPressed: () {
+//                 a = int.parse(n1Controller.text);
+//                 b = int.parse(n2Controller.text);
+//                 //before swapping values a,b
+//                 setState(() {});
+//                 print("before swapping value of a=$a");
+//                 print("before swapping value of b=$b");
+//                 empty = a;
+//                 a = b;
+//                 b = empty;
+//               },
+//               child: Text(
+//                 'SWAP',
+//                 style: TextStyle(
+//                   color: Colors.black,
+//                   backgroundColor: Colors.purpleAccent,
+//                   fontSize: 15,
+//                   fontWeight: FontWeight.bold,
 //                 ),
 //               ),
 //             ),
