@@ -80,6 +80,28 @@ class _SwappingState extends State<Swapping> {
           ),
         ),
 
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            'Before Swapping ,',
+            style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+          ),
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Text(
+          'The value of n1=$n1',
+          style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        Text(
+          'The value of n2=$n2',
+          style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
+        ),
+
         Center(
           child: FloatingActionButton(
             onPressed: () {
@@ -98,27 +120,7 @@ class _SwappingState extends State<Swapping> {
         SizedBox(
           height: 30,
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text(
-            'before Swapping ,',
-            style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
-          ),
-        ),
-        SizedBox(
-          height: 20,
-        ),
-        Text(
-          'The value of n1=$n1',
-          style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
-        ),
-        SizedBox(
-          height: 10,
-        ),
-        Text(
-          'The value of n2=$n2',
-          style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
-        ),
+
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
