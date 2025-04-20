@@ -26,6 +26,11 @@ class _BillState extends State<Bill> {
         children: [
           TextFormField(
             controller: unitsController,
+            style: TextStyle(color: Colors.black),
+            decoration: InputDecoration(
+              hintText: ('Enter Units'),
+              hintStyle: TextStyle(color: Colors.black),
+            ),
           )
         ],
       ),
