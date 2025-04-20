@@ -26,12 +26,18 @@ class _BillState extends State<Bill> {
       body: Column(
         children: [
           Text('Units'),
-          TextFormField(
-            controller: unitsController,
-            style: TextStyle(color: Colors.black),
-            decoration: InputDecoration(
-              hintText: ('Enter Units'),
-              hintStyle: TextStyle(color: Colors.black),
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.grey,
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: TextFormField(
+              controller: unitsController,
+              style: TextStyle(color: Colors.black),
+              decoration: InputDecoration(
+                hintText: ('Enter Units'),
+                hintStyle: TextStyle(color: Colors.black),
+              ),
             ),
           ),
           FloatingActionButton(
