@@ -8,8 +8,19 @@ class Bill extends StatefulWidget {
 }
 
 class _BillState extends State<Bill> {
+  int units = 0;
+  int price = 0;
+  int tax = 0;
+  int total_bill = 0;
+
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Colors.blueGrey,
+      appBar: AppBar(
+        leading: Icon(Icons.flash_on),
+        title: Text('Wapda Project:'),
+      ),
+    );
   }
 }
