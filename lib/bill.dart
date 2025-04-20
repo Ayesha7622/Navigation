@@ -12,6 +12,7 @@ class _BillState extends State<Bill> {
   int price = 0;
   int tax = 0;
   int total_bill = 0;
+  TextEditingController unitsController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +21,9 @@ class _BillState extends State<Bill> {
       appBar: AppBar(
         leading: Icon(Icons.flash_on),
         title: Text('Wapda Project:'),
+      ),
+      body: Column(
+        children: [TextFormField()],
       ),
     );
   }
