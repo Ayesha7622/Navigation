@@ -26,38 +26,34 @@ class _BillState extends State<Bill> {
       body: Column(
         children: [
           Text('Units'),
-          Row(
-            children: [
-              SizedBox(
-                height: 40,
+          SizedBox(
+            height: 40,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 30),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.circular(15),
               ),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 70, vertical: 30),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: TextFormField(
-                      controller: unitsController,
-                      style: TextStyle(color: Colors.black),
-                      decoration: InputDecoration(
-                        hintText: ('Enter Units'),
-                        hintStyle: TextStyle(color: Colors.black),
-                      ),
-                    ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextFormField(
+                  controller: unitsController,
+                  style: TextStyle(color: Colors.black),
+                  decoration: InputDecoration(
+                    hintText: ('Enter Units'),
+                    hintStyle: TextStyle(color: Colors.black),
                   ),
                 ),
               ),
-            ],
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
               onPressed: () {
+                units = int.parse(unitsController.text);
                 if (units >= 200) {
                   price = 50000;
                 }
