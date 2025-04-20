@@ -40,7 +40,7 @@ class _BillState extends State<Bill> {
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(),
+                    padding: const EdgeInsets.all(8.0),
                     child: TextFormField(
                       controller: unitsController,
                       style: TextStyle(color: Colors.black),
