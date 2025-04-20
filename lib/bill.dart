@@ -26,17 +26,20 @@ class _BillState extends State<Bill> {
       body: Column(
         children: [
           Text('Units'),
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.grey,
-              borderRadius: BorderRadius.circular(15),
-            ),
-            child: TextFormField(
-              controller: unitsController,
-              style: TextStyle(color: Colors.black),
-              decoration: InputDecoration(
-                hintText: ('Enter Units'),
-                hintStyle: TextStyle(color: Colors.black),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: TextFormField(
+                controller: unitsController,
+                style: TextStyle(color: Colors.black),
+                decoration: InputDecoration(
+                  hintText: ('Enter Units'),
+                  hintStyle: TextStyle(color: Colors.black),
+                ),
               ),
             ),
           ),
