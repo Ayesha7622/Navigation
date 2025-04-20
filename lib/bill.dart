@@ -69,6 +69,7 @@ class _BillState extends State<Bill> {
                 Text('Price$price');
                 Text('Tax$tax');
                 Text('Total Bill$total_bill');
+                setState(() {});
               },
               child: Text('Total Bill='),
             ),
