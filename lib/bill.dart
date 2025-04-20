@@ -74,7 +74,10 @@ class _BillState extends State<Bill> {
             'Units Consumed=$units',
             style: TextStyle(fontSize: 30),
           ),
-          Text('Price=$price'),
+          Text(
+            'Price=$price',
+            style: TextStyle(fontSize: 30),
+          ),
           Text('Tax=$tax'),
           Text('Total Bill=$total_bill'),
         ],
