@@ -28,6 +28,9 @@ class _BillState extends State<Bill> {
           Text('Units'),
           Row(
             children: [
+              SizedBox(
+                height: 40,
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 70),
                 child: Container(
