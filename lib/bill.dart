@@ -47,7 +47,7 @@ class _BillState extends State<Bill> {
                 total_bill = tax + total_bill;
               }
               Text('Units Consumed$units');
-              Text('Price');
+              Text('Price$price');
               Text('Tax');
               Text('Total Bill');
             },
