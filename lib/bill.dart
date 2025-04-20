@@ -26,27 +26,26 @@ class _BillState extends State<Bill> {
       body: Column(
         children: [
           Text('Units'),
-          Row(
-            children: [
-              Padding(
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 98, vertical: 30),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 88, vertical: 30),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: TextFormField(
-                    controller: unitsController,
-                    style: TextStyle(color: Colors.black),
-                    decoration: InputDecoration(
-                      hintText: ('Enter Units'),
-                      hintStyle: TextStyle(color: Colors.black),
-                    ),
+                    const EdgeInsets.symmetric(horizontal: 98, vertical: 30),
+                child: TextFormField(
+                  controller: unitsController,
+                  style: TextStyle(color: Colors.black),
+                  decoration: InputDecoration(
+                    hintText: ('Enter Units'),
+                    hintStyle: TextStyle(color: Colors.black),
                   ),
                 ),
               ),
-            ],
+            ),
           ),
           FloatingActionButton(
             onPressed: () {
