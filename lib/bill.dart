@@ -23,7 +23,11 @@ class _BillState extends State<Bill> {
         title: Text('Wapda Project:'),
       ),
       body: Column(
-        children: [TextFormField()],
+        children: [
+          TextFormField(
+            controller: unitsController,
+          )
+        ],
       ),
     );
   }
