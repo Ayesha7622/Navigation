@@ -19,6 +19,7 @@ class _BillState extends State<Bill> {
     return Scaffold(
       backgroundColor: Colors.blueGrey,
       appBar: AppBar(
+        backgroundColor: Colors.blueAccent,
         leading: Icon(Icons.flash_on),
         title: Text('Wapda Project:'),
       ),
