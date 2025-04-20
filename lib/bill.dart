@@ -27,7 +27,7 @@ class _BillState extends State<Bill> {
         children: [
           Text('Units'),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 98, vertical: 30),
+            padding: const EdgeInsets.symmetric(horizontal: 70),
             child: Container(
               decoration: BoxDecoration(
                 color: Colors.grey,
@@ -47,25 +47,28 @@ class _BillState extends State<Bill> {
               ),
             ),
           ),
-          FloatingActionButton(
-            onPressed: () {
-              if (units >= 200) {
-                price = 50000;
-              }
-              if (units <= 200) {
-                price = 40000;
-              }
-              total_bill = units * price;
-              if (total_bill > 30000) {
-                tax = 3000;
-                total_bill = tax + total_bill;
-              }
-              Text('Units Consumed$units');
-              Text('Price$price');
-              Text('Tax$tax');
-              Text('Total Bill$total_bill');
-            },
-            child: Text('Total Bill='),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
+              onPressed: () {
+                if (units >= 200) {
+                  price = 50000;
+                }
+                if (units <= 200) {
+                  price = 40000;
+                }
+                total_bill = units * price;
+                if (total_bill > 30000) {
+                  tax = 3000;
+                  total_bill = tax + total_bill;
+                }
+                Text('Units Consumed$units');
+                Text('Price$price');
+                Text('Tax$tax');
+                Text('Total Bill$total_bill');
+              },
+              child: Text('Total Bill='),
+            ),
           )
         ],
       ),
