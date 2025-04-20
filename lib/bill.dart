@@ -46,6 +46,10 @@ class _BillState extends State<Bill> {
                 tax = 3000;
                 total_bill = tax + total_bill;
               }
+              Text('Units Consumed$units');
+              Text('Price');
+              Text('Tax');
+              Text('Total Bill');
             },
             child: Text('Total Bill='),
           )
