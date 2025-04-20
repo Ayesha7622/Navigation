@@ -35,7 +35,7 @@ class _BillState extends State<Bill> {
               ),
               child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 98, vertical: 30),
+                    const EdgeInsets.symmetric(horizontal: 98, vertical: 10),
                 child: TextFormField(
                   controller: unitsController,
                   style: TextStyle(color: Colors.black),
