@@ -25,7 +25,6 @@ class _BillState extends State<Bill> {
       ),
       body: Column(
         children: [
-          Text('Units'),
           SizedBox(
             height: 40,
           ),

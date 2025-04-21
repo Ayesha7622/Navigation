@@ -265,8 +265,11 @@ class _SwapWithScreenState extends State<SwapWithScreen> {
           Center(
             child: FloatingActionButton(
               onPressed: () {
+                print('============================1');
                 n1 = int.parse(n1Controller.text);
                 n2 = int.parse(n2Controller.text);
+                //  n1 = int.parse(n1Controller.text);
+                //n2 = int.parse(n2Controller.text);
 
                 empty = n1;
                 n1 = n2;
