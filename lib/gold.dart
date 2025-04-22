@@ -36,12 +36,15 @@ class _GoldState extends State<Gold> {
       ),
       body: Column(
         children: [
-          TextFormField(
-            controller: price_of_tolacontroller,
-            style: TextStyle(color: const Color.fromARGB(255, 231, 228, 228)),
-            decoration: InputDecoration(
-                hintText: 'Price Of Tola=',
-                hintStyle: TextStyle(color: Colors.black)),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              controller: price_of_tolacontroller,
+              style: TextStyle(color: const Color.fromARGB(255, 231, 228, 228)),
+              decoration: InputDecoration(
+                  hintText: 'Price Of Tola=',
+                  hintStyle: TextStyle(color: Colors.black)),
+            ),
           )
         ],
       ),
