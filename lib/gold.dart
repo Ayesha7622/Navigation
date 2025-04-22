@@ -8,14 +8,13 @@ class Gold extends StatefulWidget {
 }
 
 class _GoldState extends State<Gold> {
-  int amount_of_tola_price = 0;
+  int price_of_tola = 0;
   int quantity_of_tola_gold = 0;
   int quantity_of_masha_gold = 0;
   int quantity_of_ratti_gold = 0;
   int quantity_of_point_gold = 0;
 
-  TextEditingController amount_of_tola_pricecontroller =
-      TextEditingController();
+  TextEditingController price_of_tolacontroller = TextEditingController();
   TextEditingController quantity_of_tola_goldcontroller =
       TextEditingController();
   TextEditingController quantity_of_masha_goldcontroller =
@@ -36,7 +35,15 @@ class _GoldState extends State<Gold> {
         ),
       ),
       body: Column(
-        children: [TextFormField()],
+        children: [
+          TextFormField(
+            controller: price_of_tolacontroller,
+            style: TextStyle(color: const Color.fromARGB(255, 231, 228, 228)),
+            decoration: InputDecoration(
+                hintText: 'Price Of Tola=',
+                hintStyle: TextStyle(color: Colors.black)),
+          )
+        ],
       ),
     );
   }
