@@ -13,6 +13,9 @@ class _GoldState extends State<Gold> {
   int quantity_of_masha_gold = 0;
   int quantity_of_ratti_gold = 0;
   int quantity_of_point_gold = 0;
+  double pricemasha = 0;
+  double priceratti = 0;
+  double pricepoint = 0;
 
   TextEditingController price_of_tolacontroller = TextEditingController();
   TextEditingController quantity_of_tola_goldcontroller =
@@ -142,6 +145,7 @@ class _GoldState extends State<Gold> {
                 int.parse(quantity_of_tola_goldcontroller.text);
             quantity_of_masha_gold =
                 int.parse(quantity_of_masha_goldcontroller.text);
+
             quantity_of_ratti_gold =
                 int.parse(quantity_of_ratti_goldcontroller.text);
             quantity_of_point_gold =
@@ -151,6 +155,8 @@ class _GoldState extends State<Gold> {
                 quantity_of_masha_gold == "" &&
                 quantity_of_ratti_gold == "" &&
                 quantity_of_point_gold == "") {
+              pricemasha = quantity_of_tola_gold / 12;
+
               price_of_tola = (price_of_tola * quantity_of_tola_gold) +
                   quantity_of_masha_gold +
                   quantity_of_ratti_gold +
@@ -158,7 +164,17 @@ class _GoldState extends State<Gold> {
             }
             child:
             Text('Calculate');
-          })
+          }),
+          SizedBox(
+            height: 30,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Total Price Of Tola ,',
+              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+            ),
+          ),
         ],
       ),
     );
