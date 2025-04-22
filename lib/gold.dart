@@ -44,12 +44,12 @@ class _GoldState extends State<Gold> {
           FloatingActionButton(onPressed: () {})
         ],
       ),
-      backgroundColor: Colors.lightGreen,
+      backgroundColor: const Color.fromARGB(255, 20, 20, 20),
       appBar: AppBar(
-        backgroundColor: Colors.deepOrangeAccent,
+        backgroundColor: Colors.amber,
         title: Text(
-          'Gold App',
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          'Jwellery App',
+          style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
         ),
       ),
       body: SingleChildScrollView(
@@ -59,15 +59,15 @@ class _GoldState extends State<Gold> {
               padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 30),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.amber,
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     controller: priceOfTolaController,
-                    style: TextStyle(
-                        color: const Color.fromARGB(255, 231, 228, 228)),
+                    style:
+                        TextStyle(color: const Color.fromARGB(255, 24, 23, 23)),
                     decoration: InputDecoration(
                         hintText: 'Price Of Tola=',
                         hintStyle: TextStyle(color: Colors.black)),
@@ -88,15 +88,15 @@ class _GoldState extends State<Gold> {
               padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 30),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.amber,
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     controller: quantityOfTolagoldController,
-                    style: TextStyle(
-                        color: const Color.fromARGB(255, 231, 228, 228)),
+                    style:
+                        TextStyle(color: const Color.fromARGB(255, 15, 15, 15)),
                     decoration: InputDecoration(
                         hintText: 'Quantity Of Tola gold=',
                         hintStyle: TextStyle(color: Colors.black)),
@@ -108,15 +108,15 @@ class _GoldState extends State<Gold> {
               padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 30),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.amber,
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     controller: quantityOfMashaGoldController,
-                    style: TextStyle(
-                        color: const Color.fromARGB(255, 231, 228, 228)),
+                    style:
+                        TextStyle(color: const Color.fromARGB(255, 17, 17, 17)),
                     decoration: InputDecoration(
                         hintText: 'Quantity Of Masha gold=',
                         hintStyle: TextStyle(color: Colors.black)),
