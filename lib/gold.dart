@@ -135,7 +135,30 @@ class _GoldState extends State<Gold> {
                 ),
               ),
             ),
-          )
+          ),
+          FloatingActionButton(onPressed: () {
+            price_of_tola = int.parse(price_of_tolacontroller.text);
+            quantity_of_tola_gold =
+                int.parse(quantity_of_tola_goldcontroller.text);
+            quantity_of_masha_gold =
+                int.parse(quantity_of_masha_goldcontroller.text);
+            quantity_of_ratti_gold =
+                int.parse(quantity_of_ratti_goldcontroller.text);
+            quantity_of_point_gold =
+                int.parse(quantity_of_ratti_goldcontroller.text);
+            if (price_of_tola == "" &&
+                quantity_of_tola_gold == "" &&
+                quantity_of_masha_gold == "" &&
+                quantity_of_ratti_gold == "" &&
+                quantity_of_point_gold == "") {
+              price_of_tola = (price_of_tola * quantity_of_tola_gold) +
+                  quantity_of_masha_gold +
+                  quantity_of_ratti_gold +
+                  quantity_of_point_gold;
+            }
+            child:
+            Text('Calculate');
+          })
         ],
       ),
     );
