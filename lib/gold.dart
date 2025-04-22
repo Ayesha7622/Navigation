@@ -16,6 +16,9 @@ class _GoldState extends State<Gold> {
   double pricemasha = 0;
   double priceratti = 0;
   double pricepoint = 0;
+  // double total_masha_price = 0;
+  // double total_ratti_price = 0;
+  // double total_point_price = 0;
 
   TextEditingController price_of_tolacontroller = TextEditingController();
   TextEditingController quantity_of_tola_goldcontroller =
@@ -157,6 +160,13 @@ class _GoldState extends State<Gold> {
                 quantity_of_point_gold == "") {
               pricemasha = quantity_of_tola_gold / 12;
 
+              double total_masha_price = pricemasha * quantity_of_masha_gold;
+              priceratti = quantity_of_masha_gold / 96;
+
+              double total_ratti_price = priceratti * quantity_of_ratti_gold;
+              pricepoint = quantity_of_point_gold / 300;
+              double total_point_price = pricepoint * quantity_of_point_gold;
+
               price_of_tola = (price_of_tola * quantity_of_tola_gold) +
                   quantity_of_masha_gold +
                   quantity_of_ratti_gold +
@@ -172,6 +182,34 @@ class _GoldState extends State<Gold> {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               'Total Price Of Tola ,',
+              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Quantity of Tola Gold ,',
+              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Quantity of Masha Gold ,',
+              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Quantity of Ratti gold ,',
+              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Quantity of POint Gold ,',
               style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
             ),
           ),
