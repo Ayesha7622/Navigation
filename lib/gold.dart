@@ -117,12 +117,13 @@ class _GoldState extends State<Gold> {
               padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 5),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.amber,
-                  borderRadius: BorderRadius.circular(15),
-                ),
+                    //color: Colors.amber,
+                    borderRadius: BorderRadius.circular(15),
+                    border: Border.all(width: 2, color: Colors.amber)),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
+                    keyboardType: TextInputType.number,
                     controller: quantityOfMashaGoldController,
                     style: TextStyle(color: Colors.yellow),
                     decoration: InputDecoration(
@@ -137,18 +138,18 @@ class _GoldState extends State<Gold> {
               padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 5),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.amber,
+                  //color: Colors.amber,
+                  border: Border.all(width: 2, color: Colors.amber),
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     controller: quantityOfRattiGoldcontroller,
-                    style:
-                        TextStyle(color: const Color.fromARGB(255, 10, 10, 10)),
+                    style: TextStyle(color: Colors.yellow),
                     decoration: InputDecoration(
                         hintText: 'Quantity Of Ratti gold=',
-                        hintStyle: TextStyle(color: Colors.black)),
+                        hintStyle: TextStyle(color: Colors.yellow)),
                   ),
                 ),
               ),
