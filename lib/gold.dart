@@ -232,7 +232,7 @@ class _GoldState extends State<Gold> {
                   child: TextButton(
                       onPressed: () {},
                       child: Text(
-                        'Calculatr',
+                        'Calculate',
                         style: TextStyle(color: Colors.black),
                       )),
                 ),
@@ -242,6 +242,12 @@ class _GoldState extends State<Gold> {
                 FloatingActionButton(
                     backgroundColor: Colors.amber,
                     onPressed: () {
+                      int priceOfTola = 0;
+                      int quantityOfTolaGold = 0;
+                      int quantityOfMashaGold = 0;
+                      int quantityOfRattiGold = 0;
+                      int quantityOfPointGold = 0;
+
                       setState(() {});
                     },
                     child: Icon(Icons.refresh) //Text('Clear'),
@@ -260,56 +266,101 @@ class _GoldState extends State<Gold> {
             SizedBox(
               height: 30,
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Total Price Of Rs.$totalPtice',
-                style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.amber),
-              ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Total Price Of Rs.$totalPtice',
+                    style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.amber),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Quantity of Tola Gold =$quantityOfTolaGold',
+                    style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.amber),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Quantity of Masha Gold =$quantityOfMashaGold',
+                    style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.amber),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Quantity of Ratti gold =$quantityOfRattiGold',
+                    style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.amber),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Quantity of POint Gold =$quantityOfPointGold',
+                    style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.amber),
+                  ),
+                ),
+              ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Quantity of Tola Gold =',
-                style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.amber),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Quantity of Masha Gold =',
-                style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.amber),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Quantity of Ratti gold =',
-                style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.amber),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Quantity of POint Gold =',
-                style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.amber),
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.all(8.0),
+            //   child: Text(
+            //     'Quantity of Tola Gold =',
+            //     style: TextStyle(
+            //         fontSize: 24,
+            //         fontWeight: FontWeight.w500,
+            //         color: Colors.amber),
+            //   ),
+            // ),
+            // Padding(
+            //   padding: const EdgeInsets.all(8.0),
+            //   child: Text(
+            //     'Quantity of Masha Gold =',
+            //     style: TextStyle(
+            //         fontSize: 24,
+            //         fontWeight: FontWeight.w500,
+            //         color: Colors.amber),
+            //   ),
+            // ),
+            // Padding(
+            //   padding: const EdgeInsets.all(8.0),
+            //   child: Text(
+            //     'Quantity of Ratti gold =',
+            //     style: TextStyle(
+            //         fontSize: 24,
+            //         fontWeight: FontWeight.w500,
+            //         color: Colors.amber),
+            //   ),
+            // ),
+            // Padding(
+            //   padding: const EdgeInsets.all(8.0),
+            //   child: Text(
+            //     'Quantity of POint Gold =',
+            //     style: TextStyle(
+            //         fontSize: 24,
+            //         fontWeight: FontWeight.w500,
+            //         color: Colors.amber),
+            //   ),
+            // ),
           ],
         ),
       ),
