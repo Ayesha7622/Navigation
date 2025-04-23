@@ -285,8 +285,8 @@ class _GoldState extends State<Gold> {
               child: Text(
                 'Quantity of Masha Gold =',
                 style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
                     color: Colors.amber),
               ),
             ),
@@ -295,8 +295,8 @@ class _GoldState extends State<Gold> {
               child: Text(
                 'Quantity of Ratti gold =',
                 style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
                     color: Colors.amber),
               ),
             ),
@@ -305,8 +305,8 @@ class _GoldState extends State<Gold> {
               child: Text(
                 'Quantity of POint Gold =',
                 style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
                     color: Colors.amber),
               ),
             ),
