@@ -118,7 +118,7 @@ class _GoldState extends State<Gold> {
               child: Container(
                 decoration: BoxDecoration(
                     //color: Colors.amber,
-                    borderRadius: BorderRadius.circular(15),
+                    borderRadius: BorderRadius.circular(10),
                     border: Border.all(width: 2, color: Colors.amber)),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -140,14 +140,16 @@ class _GoldState extends State<Gold> {
                 decoration: BoxDecoration(
                   //color: Colors.amber,
                   border: Border.all(width: 2, color: Colors.amber),
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
+                    keyboardType: TextInputType.number,
                     controller: quantityOfRattiGoldcontroller,
                     style: TextStyle(color: Colors.yellow),
                     decoration: InputDecoration(
+                        border: InputBorder.none,
                         hintText: 'Quantity Of Ratti gold=',
                         hintStyle: TextStyle(color: Colors.yellow)),
                   ),
@@ -158,17 +160,20 @@ class _GoldState extends State<Gold> {
               padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 5),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.amber,
-                  borderRadius: BorderRadius.circular(15),
+                  //color: Colors.amber,
+                  border: Border.all(width: 2, color: Colors.amber),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
+                    keyboardType: TextInputType.number,
                     controller: quantityOfPointGoldcontroller,
-                    style: TextStyle(color: const Color.fromARGB(255, 7, 7, 7)),
+                    style: TextStyle(color: Colors.yellow),
                     decoration: InputDecoration(
+                        border: InputBorder.none,
                         hintText: 'Quantity Of Point gold=',
-                        hintStyle: TextStyle(color: Colors.black)),
+                        hintStyle: TextStyle(color: Colors.yellow)),
                   ),
                 ),
               ),
@@ -260,8 +265,8 @@ class _GoldState extends State<Gold> {
               child: Text(
                 'Total Price Of Rs.$totalPtice',
                 style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
                     color: Colors.amber),
               ),
             ),
@@ -270,8 +275,8 @@ class _GoldState extends State<Gold> {
               child: Text(
                 'Quantity of Tola Gold =',
                 style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
                     color: Colors.amber),
               ),
             ),
