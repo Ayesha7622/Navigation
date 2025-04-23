@@ -48,12 +48,34 @@ class _GoldState extends State<Gold> {
       ),
       backgroundColor: const Color.fromARGB(255, 20, 20, 20),
       appBar: AppBar(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.amber.shade400,
         title: Text(
           'Jwellery App',
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
         leading: Icon(Icons.calculate),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
+                backgroundColor: Colors.black,
+                onPressed: () {
+                  int priceOfTola = 0;
+                  int quantityOfTolaGold = 0;
+                  int quantityOfMashaGold = 0;
+                  int quantityOfRattiGold = 0;
+                  int quantityOfPointGold = 0;
+                  int totalPtice = 0;
+
+                  setState(() {});
+                },
+                child: Icon(
+                  Icons.refresh,
+                  color: Colors.yellow,
+                ) //Text('Clear'),
+                ),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -239,19 +261,20 @@ class _GoldState extends State<Gold> {
                 SizedBox(
                   width: 10,
                 ),
-                FloatingActionButton(
-                    backgroundColor: Colors.amber,
-                    onPressed: () {
-                      int priceOfTola = 0;
-                      int quantityOfTolaGold = 0;
-                      int quantityOfMashaGold = 0;
-                      int quantityOfRattiGold = 0;
-                      int quantityOfPointGold = 0;
+                // FloatingActionButton(
+                //     backgroundColor: Colors.amber,
+                //     onPressed: () {
+                //       int priceOfTola = 0;
+                //       int quantityOfTolaGold = 0;
+                //       int quantityOfMashaGold = 0;
+                //       int quantityOfRattiGold = 0;
+                //       int quantityOfPointGold = 0;
+                //       int totalPtice = 0;
 
-                      setState(() {});
-                    },
-                    child: Icon(Icons.refresh) //Text('Clear'),
-                    ),
+                //       setState(() {});
+                //     },
+                //     child: Icon(Icons.refresh) //Text('Clear'),
+                //     ),
               ],
             ),
             // FloatingActionButton(
@@ -276,7 +299,7 @@ class _GoldState extends State<Gold> {
                     style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.w500,
-                        color: Colors.amber),
+                        color: Colors.amber.shade400),
                   ),
                 ),
                 Padding(
@@ -286,7 +309,7 @@ class _GoldState extends State<Gold> {
                     style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.w500,
-                        color: Colors.amber),
+                        color: Colors.amber.shade400),
                   ),
                 ),
                 Padding(
@@ -296,7 +319,7 @@ class _GoldState extends State<Gold> {
                     style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.w500,
-                        color: Colors.amber),
+                        color: Colors.amber.shade400),
                   ),
                 ),
                 Padding(
@@ -306,7 +329,7 @@ class _GoldState extends State<Gold> {
                     style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.w500,
-                        color: Colors.amber),
+                        color: Colors.amber.shade400),
                   ),
                 ),
                 Padding(
