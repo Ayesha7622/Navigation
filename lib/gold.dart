@@ -65,7 +65,8 @@ class _GoldState extends State<Gold> {
               padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 5),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.amber,
+                  //color: Colors.amber,
+                  border: Border.all(width: 2, color: Colors.amber),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Padding(
@@ -77,7 +78,7 @@ class _GoldState extends State<Gold> {
                     decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Price Of Tola=',
-                        hintStyle: TextStyle(color: Colors.black)),
+                        hintStyle: TextStyle(color: Colors.yellow)),
                   ),
                 ),
               ),
@@ -103,8 +104,7 @@ class _GoldState extends State<Gold> {
                   child: TextFormField(
                     keyboardType: TextInputType.number,
                     controller: quantityOfTolagoldController,
-                    style:
-                        TextStyle(color: const Color.fromARGB(255, 15, 15, 15)),
+                    style: TextStyle(color: Colors.yellow),
                     decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Quantity Of Tola gold=',
@@ -124,11 +124,11 @@ class _GoldState extends State<Gold> {
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     controller: quantityOfMashaGoldController,
-                    style:
-                        TextStyle(color: const Color.fromARGB(255, 17, 17, 17)),
+                    style: TextStyle(color: Colors.yellow),
                     decoration: InputDecoration(
+                        border: InputBorder.none,
                         hintText: 'Quantity Of Masha gold=',
-                        hintStyle: TextStyle(color: Colors.black)),
+                        hintStyle: TextStyle(color: Colors.yellow)),
                   ),
                 ),
               ),
