@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:navigate/bill.dart';
-import 'package:navigate/gold.dart';
+
 import 'package:navigate/ifelse.dart';
 import 'package:navigate/login.dart';
 import 'package:navigate/signup.dart';
@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
         //home: Swapping()
         //  home: SwapWithScreen()
         //home: SwapClassScreen(),
-        //home: Bill(),
-        home: Gold());
+        home: Bill(),
+        );
   }
 }
 
