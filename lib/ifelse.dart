@@ -17,18 +17,18 @@ class _IfLoginState extends State<IfLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 107, 143, 131),
+      backgroundColor: const Color.fromARGB(255, 39, 62, 89),
       appBar: AppBar(
         leading: Icon(
           Icons.login,
-          size: 40,
+          size: 30,
           color: Colors.white,
         ),
-        backgroundColor: const Color.fromARGB(255, 47, 95, 77),
+        backgroundColor: const Color.fromARGB(255, 71, 105, 135),
         title: Text(
           'Login Screen',
           style: TextStyle(
-              color: Colors.white, fontSize: 45, fontWeight: FontWeight.bold),
+              color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
         ),
       ),
       body: Column(children: [

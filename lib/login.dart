@@ -19,14 +19,14 @@ class _LoginState extends State<Login> {
         appBar: AppBar(
           leading: Icon(
             Icons.login,
-            size: 40,
+            size: 30,
             color: Colors.white,
           ),
           backgroundColor: const Color.fromARGB(255, 71, 73, 76),
           title: Text(
             'Login Screen',
             style: TextStyle(
-                color: Colors.white, fontSize: 45, fontWeight: FontWeight.bold),
+                color: Colors.white, fontSize: 35, fontWeight: FontWeight.w500),
           ),
         ),
         body: Column(children: [

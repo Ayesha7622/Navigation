@@ -20,11 +20,11 @@ class _SwappingState extends State<Swapping> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 177, 232, 235),
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 47, 95, 77),
+        backgroundColor: const Color.fromARGB(255, 12, 41, 54),
         title: Text(
           'Swapping',
           style: TextStyle(
-              color: Colors.white, fontSize: 45, fontWeight: FontWeight.bold),
+              color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
         ),
       ),
       body: SingleChildScrollView(
@@ -102,6 +102,7 @@ class _SwappingState extends State<Swapping> {
 
           Center(
             child: FloatingActionButton(
+              backgroundColor: const Color.fromARGB(255, 71, 98, 120),
               onPressed: () {
                 n1 = int.parse(n1Controller.text);
                 n2 = int.parse(n2Controller.text);
@@ -115,6 +116,8 @@ class _SwappingState extends State<Swapping> {
               },
               child: Text(
                 'Swapping',
+                style:
+                    TextStyle(color: const Color.fromARGB(255, 233, 235, 237)),
               ),
             ),
           ),

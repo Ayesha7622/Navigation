@@ -17,11 +17,14 @@ class _BillState extends State<Bill> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: const Color.fromARGB(255, 103, 136, 152),
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
-        leading: Icon(Icons.flash_on),
-        title: Text('Wapda Project:'),
+        backgroundColor: const Color.fromARGB(255, 167, 218, 238),
+        leading: Icon(Icons.calculate),
+        title: Text(
+          'Wapda Project',
+          style: TextStyle(fontWeight: FontWeight.w600, fontSize: 30),
+        ),
       ),
       body: Column(
         children: [
@@ -51,6 +54,7 @@ class _BillState extends State<Bill> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              backgroundColor: const Color.fromARGB(255, 39, 51, 57),
               onPressed: () {
                 units = int.parse(unitsController.text);
                 if (units >= 200) {
@@ -66,24 +70,43 @@ class _BillState extends State<Bill> {
                 }
                 setState(() {});
               },
-              child: Text('Total Bill='),
+              child: Icon(
+                Icons.calculate,
+                color: Colors.white,
+              ),
+              // child: Text(
+              //   'Total Bill=',
+              //   style: TextStyle(color: Colors.white),
+              // ),
             ),
           ),
-          Text(
-            'Units Consumed=$units',
-            style: TextStyle(fontSize: 30),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Units Consumed=$units',
+              style: TextStyle(fontSize: 25),
+            ),
           ),
-          Text(
-            'Price=$price',
-            style: TextStyle(fontSize: 30),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Price=$price',
+              style: TextStyle(fontSize: 25),
+            ),
           ),
-          Text(
-            'Tax=$tax',
-            style: TextStyle(fontSize: 30),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Tax=$tax',
+              style: TextStyle(fontSize: 25),
+            ),
           ),
-          Text(
-            'Total Bill=$total_bill',
-            style: TextStyle(fontSize: 30),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Total Bill=$total_bill',
+              style: TextStyle(fontSize: 30),
+            ),
           ),
         ],
       ),
